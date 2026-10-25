@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un pequeño detalle para ti</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #d991a6, #e9b1bf, #f2d5dc);
+            color: #49343b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            overflow-x: hidden;
+        }
+
+        .tarjeta {
+            width: 100%;
+            max-width: 680px;
+            background: #fffaf8;
+            padding: 38px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 15px 45px rgba(91, 43, 60, 0.16);
+            position: relative;
+            z-index: 2;
+            animation: entrada 0.9s ease;
+        }
+
+        @keyframes entrada {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .icono {
+            font-size: 34px;
+            margin-bottom: 14px; 
+        }
+
+        h1 {
+            color: #a9506e;
+            font-size: 30px;
+            margin-bottom: 16px;
+        }
+
+        .subtitulo {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #70555e;
+            margin-bottom: 25px;
+        }
+
+        .mensaje {
+            text-align: left;
+            background: #f9edf0;
+            border-left: 4px solid #c77b94;
+            padding: 17px 19px;
+            margin: 13px 0;
+            border-radius: 10px;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        .mensaje h3 {
+            color: #a9506e;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .pregunta {
+            color: #91435f;
+            font-size: 21px;
+            font-weight: 600;
+            margin-top: 28px;
+            line-height: 1.6;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            min-height: 65px;
+            margin-top: 20px;
+        }
+
+        button {
+            border: none;
+            border-radius: 30px;
+            padding: 13px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        #si {
+            background: #ad5875;
+            color: white;
+            box-shadow: 0 5px 14px rgba(173, 88, 117, 0.2);
+        }
+
+        #si:hover {
+            background: #91435f;
+            transform: translateY(-2px);
+        }
+
+        #no {
+            background: #ead5dc;
+            color: #714555;
+        }
+
+        .firma {
+            color: #987b84;
+            font-size: 13px;
+            margin-top: 26px;
+        }
+
+        #sorpresa {
+            display: none;
+            margin-top: 25px;
+            padding: 24px;
+            border-radius: 15px;
+            background: #f8e5eb;
+            line-height: 1.8;
+            animation: entrada 0.6s ease;
+        }
+
+        #sorpresa h2 {
+            color: #a9506e;
+            margin-bottom: 12px;
+            font-size: 23px;
+        }
+
+        .corazon {
+            position: fixed;
+            bottom: -30px;
+            pointer-events: none;
+            animation: flotar 7s linear forwards;
+            opacity: 0.6;
+            z-index: 1;
+        }
+
+        @keyframes flotar {
+            from {
+                transform: translateY(0) rotate(0);
+                opacity: 0;
+            }
+            15% {
+                opacity: 0.6;
+            }
+            to {
+                transform: translateY(-110vh) rotate(35deg);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .tarjeta {
+                padding: 27px 20px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            .pregunta {
+                font-size: 19px;
+            }
+
+            .mensaje {
+                padding: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="tarjeta">
+
+        <div class="icono">🌷</div>
+
+        <h1>Un pequeño detalle para ti</h1>
+      
+        <p class="subtitulo">
+            Hola, <br>
+            Quería hacer algo diferente a los demas y se me ocurrió crear
+            esta página. No es nada del otro mundo,
+            pero espero que te guste jajaja.
+        </p>
+
+        <div class="mensaje">
+            <h3>Primero que todo quesiera pedirte perdon,
+            perdon por que me porte como un verdadero tonto
+	    sin saber la mujer valiosa que tenia, te extraño
+            cada hora y cada hora, minuto y segundo de mi
+            tiempo, no puedo vivir sin ti, te quiero mucho
+            lastimosamente como seres humanos no medimos las
+            consecuensias de nuestros actos y si la cague de
+            la menera mas horrible contigo y me arrepiento 
+            mucho, y ya era muy tarde cuando me di ceunta 
+            que te habia perdido y que te fuiste sin boleto
+            de regreso, se que pedir que vuelvas no es facil
+            la quisiera tener una oportunidad mas, quizas
+            no sea como los demas pero cuando yo amo hago 
+            hasta lo imposible por la otra persona y si noy
+            no soy perfecto pero mejorare no solo por ti 
+            lo hare por mi tambien espero que puedas ayudarme 
+            a mejorar y de la mano ed Dios poder estar mejor 
+            y podamos estar bien siempre, espero tu respuesta 
+            sabes que te quiero y tratare de ser lo mejor 
+            para ti 
+        </div>
+
+        <div class="mensaje">
+            <h3>Y algo más...</h3>
+            Sigue siendo tú, disfruta las cosas pequeñas,
+            ríete cuando puedas y no dejes de trabajar
+            por esas cosas que te hacen ilusión.
+        </div>
+
+        <p class="pregunta" id="pregunta">
+            Bueno entoces te queria preguntar... 
+            <br>
+            ¿Te gustaria volver a intentarlo?
+        </p>
+
+        <div class="botones">
+            <button id="si" onclick="aceptar()">
+                Sí 
+            </button>
+
+            <button id="no">
+                No 
+            </button>
+        </div>
+
+        <section id="sorpresa">
+            <h2>¡jajaja ya viste que si querias!</h2>
+
+            <p>
+                Espero haberte sacado aunque sea una pequeña sonrisa.
+                Quería tener un detalle contigo y esta fue mi manera
+                de hacerlo.
+            </p>
+
+            <p>
+                Me parece bonito poder conocer a alguien poco a poco,
+                compartir contigo y descubrir las pequeñas
+                cosas que te hacen especial.
+            </p>
+
+            <p>
+                Así que nada, espero que tengas una bonita tarde y espero tu respuesta jsjsjs.
+            </p>
+        </section>
+
+        <p class="firma">
+            Diseñado por Mxrcixl.
+        </p>
+
+    </main>
+
+    <script>
+        // Corazones discretos en el fondo
+        function crearCorazon() {
+            const corazon = document.createElement("div");
+            corazon.className = "corazon";
+            corazon.textContent = Math.random() > 0.5 ? "♡" : "♥";
+            corazon.style.color = "#a9506e";
+            corazon.style.fontSize = (15 + Math.random() * 12) + "px";
+            corazon.style.left = Math.random() * 100 + "vw";
+            corazon.style.animationDuration = (5 + Math.random() * 4) + "s";
+
+            document.body.appendChild(corazon);
+
+            setTimeout(() => corazon.remove(), 9500);
+        }
+
+        setInterval(crearCorazon, 1000);
+
+        
+        // Botón No: funciona con mouse y pantalla táctil
+        const botonNo = document.getElementById("no");
+
+        function moverBoton() {
+            const margen = 15;
+
+            const ancho = botonNo.offsetWidth;
+            const alto = botonNo.offsetHeight;
+
+            const maxX = Math.max(
+                margen,
+                window.innerWidth - ancho - margen
+            );
+
+            const maxY = Math.max(
+                margen,
+                window.innerHeight - alto - margen
+            );
+
+            const x = margen + Math.random() * (maxX - margen);
+            const y = margen + Math.random() * (maxY - margen);
+
+            botonNo.style.position = "fixed";
+            botonNo.style.left = x + "px";
+            botonNo.style.top = y + "px";
+        }
+
+        // Computadora: mover al acercar el mouse
+        botonNo.addEventListener("mouseenter", moverBoton);
+
+        // Celular: mover apenas toquen el botón
+        botonNo.addEventListener("touchstart", function(evento) {
+            evento.preventDefault();
+            moverBoton();
+        }, { passive: false });
+
+        // Evitar que el clic posterior al toque provoque otro movimiento
+        botonNo.addEventListener("click", function(evento) {
+            evento.preventDefault();
+            moverBoton();
+        });
+
+
+        // Mostrar el mensaje final al presionar Sí
+        function aceptar() {
+            document.getElementById("sorpresa").style.display = "block";
+            document.getElementById("pregunta").textContent =
+                "¡Ya vez por que es bueno hablar las cosas jajaja! ";
+
+            document.getElementById("si").style.display = "none";
+            botonNo.style.display = "none";
+
+            document.getElementById("sorpresa").scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        }
+    </script>
+
+</body>
+</html>
